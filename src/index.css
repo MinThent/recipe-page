@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+   :root{
+    font-family: Outfit, system-ui, Arial, sans-serif;
+  }
+  h1,h2{
+    font-family: "Young Serif", system-ui, Arial, sans-serif;
+  }
+}
