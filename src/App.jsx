@@ -29,12 +29,12 @@ function App() {
       "Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.",
       "Enjoy: Serve hot, with additional salt and pepper if needed.",
     ],
-    nutritions: {
-      calories: "277kcal",
-      carbs: "0g",
-      protein: "20g",
-      fat: "22g",
-    },
+    nutritions: [
+      { nutrient: "calories", value: "277kcal" },
+      { nutrient: "carbs", value: "0g" },
+      { nutrient: "protein", value: "20g" },
+      { nutrient: "fat", value: "22g" },
+    ],
   };
   return (
     <>
