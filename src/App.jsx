@@ -37,7 +37,7 @@ function App() {
     ],
   };
   return (
-    <div className="flex justify-center items-center bg-[#f3e5d8] md:p-14 min-h-screen">
+    <div className="flex justify-center items-center bg-[#f3e5d8] md:py-24 min-h-screen md">
       <Recipe {...recipeData} />
     </div>
   );

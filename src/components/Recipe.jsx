@@ -17,7 +17,7 @@ export default function Recipe(props) {
     nutritions,
   } = props;
   return (
-    <div className="flex flex-col items-center bg-white p-0 rounded-xl md:w-1/2 lg:w-2/5">
+    <div className="flex flex-col items-center bg-white p-0 rounded-xl md:w-3/4 lg:w-3/5">
       <RecipePic imgData={imgData} />
       <div className="flex flex-col gap-4 p-7">
         <RecipeHeader title={title} description={description} />
