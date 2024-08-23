@@ -9,11 +9,11 @@ function App() {
     title: "Simple Omelette Recipe",
     description:
       "An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.",
-    prepTime: {
-      total: "Approximately 10 minutes",
-      preparation: "5 minutes",
-      cooking: "5 minutes",
-    },
+    prepTime: [
+      "Total: Approximately 10 minutes",
+      "Preparation: 5 minutes",
+      "Cooking: 5 minutes",
+    ],
     ingredients: [
       "2-3 large eggs",
       "Salt, to taste",
@@ -30,16 +30,16 @@ function App() {
       "Enjoy: Serve hot, with additional salt and pepper if needed.",
     ],
     nutritions: [
-      { nutrient: "calories", value: "277kcal" },
-      { nutrient: "carbs", value: "0g" },
-      { nutrient: "protein", value: "20g" },
-      { nutrient: "fat", value: "22g" },
+      { nutrient: "Calories", value: "277kcal" },
+      { nutrient: "Carbs", value: "0g" },
+      { nutrient: "Protein", value: "20g" },
+      { nutrient: "Fat", value: "22g" },
     ],
   };
   return (
-    <>
+    <div className="flex justify-center items-center bg-[#f3e5d8] md:p-14 min-h-screen">
       <Recipe {...recipeData} />
-    </>
+    </div>
   );
 }
 

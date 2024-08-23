@@ -17,13 +17,15 @@ export default function Recipe(props) {
     nutritions,
   } = props;
   return (
-    <div>
+    <div className="flex flex-col items-center bg-white p-0 rounded-xl md:w-1/2 lg:w-2/5">
       <RecipePic imgData={imgData} />
-      <RecipeHeader title={title} description={description}/>
-      <PrepTime prepTime={prepTime} />
-      <Ingredients recipeItems={ingredients} />
-      <Instructions recipeSteps={instructions} />
-      <Nutrition nutritionData={nutritions} />
+      <div className="flex flex-col gap-4 p-7">
+        <RecipeHeader title={title} description={description} />
+        <PrepTime prepTime={prepTime} />
+        <Ingredients recipeItems={ingredients} />
+        <Instructions recipeSteps={instructions} />
+        <Nutrition nutritionData={nutritions} />
+      </div>
     </div>
   );
 }

@@ -2,9 +2,9 @@ import React from "react";
 
 export default function RecipeHeader({ title, description }) {
   return (
-    <div>
-      <h1>{title}</h1>
-      <p>{description}</p>
+    <div className="flex flex-col gap-4">
+      <h1 className="text-3xl">{title}</h1>
+      <p className="text-rose-red">{description}</p>
     </div>
   );
 }
